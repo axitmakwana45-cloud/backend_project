@@ -1,7 +1,10 @@
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column,relationship
 from database.db import Base
 from datetime import datetime,UTC
+from typing import TYPE_CHECKING
 
+if TYPE_CHECKING:
+    from models.url import URL
 
 class User(Base):
 
@@ -27,3 +30,7 @@ class User(Base):
     created_at: Mapped[datetime] = mapped_column(
        default=lambda: datetime.now(UTC)
     )
+
+    urls: Mapped[list["URL"]] = relationship(
+    back_populates="user"
+)

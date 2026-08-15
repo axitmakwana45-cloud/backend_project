@@ -4,7 +4,8 @@ from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 from database.db import Base
 import models
-
+from models.user import User
+from models.url import URL
 from alembic import context
 DATABASE_URL = (
     f"postgresql://"
