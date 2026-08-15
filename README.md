@@ -1,96 +1,36 @@
-# 🔗 URL Shortener API
+# Backend Projects
 
-A production-ready URL Shortener built with **FastAPI**, **PostgreSQL**, **Redis**, **Docker**, and **JWT Authentication**.
+A collection of production-oriented backend projects built to learn and demonstrate modern backend engineering concepts.
 
-This project is designed to simulate how URL shortening services like Bitly or TinyURL work while following industry-standard backend architecture and best practices.
+## Projects
 
----
+### 1. URL Shortener
 
-## 🚀 Project Overview
+A production-oriented URL shortening API built with:
 
-The URL Shortener API allows users to:
+* FastAPI
+* PostgreSQL
+* SQLAlchemy
+* Alembic
+* Redis
+* JWT Authentication
+* Rate Limiting
+* Docker
 
-- Create short URLs
-- Redirect short URLs to original URLs
-- Manage their own shortened links
-- Track analytics
-- Secure APIs using JWT Authentication
-- Handle high traffic using Redis caching
-- Prevent abuse using Rate Limiting
+📁 Project: [`URL_Shortener/`](./URL_Shortener)
 
-This project is built to learn **production-level backend development**, **system design concepts**, and **scalable API architecture**.
+See the project-specific README for complete documentation, architecture, setup instructions, API endpoints, Redis integration, Docker configuration, and security details.
 
----
-# 📚 Topics Covered
+## Technologies
 
-### Backend
-- FastAPI
-- REST API Development
-- Pydantic V2
-- Dependency Injection
-- Middleware
-- Background Tasks
-- Exception Handling
+* Python
+* FastAPI
+* PostgreSQL
+* SQLAlchemy
+* Alembic
+* Redis
+* Docker
+* JWT
+* Pydantic
 
-### Database
-- PostgreSQL
-- SQLAlchemy 2.0
-- Alembic Migrations
-- ORM Relationships
-- CRUD Operations
-- Transactions
-- Connection Pooling
 
-### Authentication & Security
-- JWT Authentication
-- Authorization
-- Password Hashing (bcrypt)
-- OAuth2 Password Flow
-- Protected Routes
-- Environment Variables
-
-### Caching
-- Redis
-- Cache-Aside Pattern
-- TTL (Time To Live)
-- Cache Invalidation
-
-### URL Shortener
-- URL Shortening
-- Base62 Encoding
-- Short Code Generation
-- URL Redirection
-- Custom Short URLs
-- URL Expiration
-- Click Tracking
-
-### Performance
-- Rate Limiting
-- Database Indexing
-- Query Optimization
-
-# 📂 Project Structure
-
-```
-src/
-│
-├── auth/
-├── users/
-├── urls/
-├── analytics/
-├── middleware/
-├── database/
-├── utils/
-├── core/
-├── models/
-├── schemas/
-├── services/
-├── repositories/
-└── main.py
-```
-
-- Error Handling
-
-### Testing
-- Unit Testing
-- Integration Testing
